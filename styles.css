@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Arial", sans-serif;
+	background: url(images/MJAkxbh.png);
+	background-color: #e9f0f5;
+}
+p {
+	margin: 10px 0;
+}
+header {
+	background-color: #0d7373;
+	height: 70px;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+}
+.container {
+	width: 940px;
+	overflow: auto;
+	margin: auto;
+}
+#timeline {
+	background: url(images/linenew.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px 0;
+}
+.tl-block {
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+.tl-year {
+	background: url(images/point-bignew.png) no-repeat 50% 0;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	margin-top: 20px;
+	margin: auto;
+}
+.tl-year div {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	padding-top: 23px;
+	text-align: center;
+}
+.tl-event {
+	background: url(images/point-smallnew.png) no-repeat top center;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	visibility: visible;
+}
+.tl-event>div {
+	width: 45%;
+	position: relative;
+	animation: fade;
+	animation-duration: 2s;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.tl-event div div {
+	border-radius: 10px;
+	padding: 15px;
+	background: #fff;
+}
+.event-r {
+	float: right;
+	background: url(images/arrow-left.png) no-repeat 0 0;
+}
+.event-l {
+	float: left;
+	background: url(images/arrow-right.png) no-repeat top right;
+}
+.event-r div {
+	margin-left: 20px;
+}
+.event-l div {
+	margin-right: 20px;
+}
+time {
+	background: #c03b44;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+footer {
+	background-color: #0d7373;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+@media (max-width:768px) {
+	.container {
+		width: 95%;
+	}
+	header {
+		height: 50px;
+	}
+	h1 {
+		font-size: 23px;
+	}
+	#timeline {
+		background: url(images/linenew.png) repeat-y 30px 0;
+	}
+	.tl-year {
+		background: url(images/point-bignew.png) no-repeat 0 0;
+		/*display: block;
+	width: 70px;
+	height: 70px;*/
+		text-align: left;
+		margin: 0;
+		/*margin-top: 20px;*/
+	}
+	.tl-event {
+		background: url(images/point-smallnew.png) no-repeat 16px 0;
+	}
+	.tl-event div {
+		position: relative;
+		width: 85%;
+	}
+	.event-l {
+		float: right;
+		background: url(images/arrow-left.png) no-repeat 0 0;
+	}
+	.event-l div {
+		margin-left: 20px;
+		margin-right: 0;
+	}
+}
+/*media query*/
